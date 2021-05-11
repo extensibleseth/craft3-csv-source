@@ -1,0 +1,49 @@
+{
+    "name": "extensibleseth/csv-source",
+    "description": "Use CSV data in templates as a Twig variable",
+    "type": "craft-plugin",
+    "version": "0.1.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "csv source"
+    ],
+    "support": {
+        "docs": "https://github.com/extensibleseth/csv-source/blob/master/README.md",
+        "issues": "https://github.com/extensibleseth/csv-source/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Seth Hendrick",
+            "homepage": "https://www.github.com/extensibleseth"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "extensibleseth\\csvsource\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CSV Source",
+        "handle": "csv-source",
+        "developer": "Seth Hendrick",
+        "developerUrl": "https://www.github.com/extensibleseth",
+        "documentationUrl": "https://github.com/extensibleseth/csv-source/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/extensibleseth/csv-source/master/CHANGELOG.md",
+        "components": {
+            "csvSourceService": "extensibleseth\\csvsource\\services\\CsvSourceService"
+        },
+        "class": "extensibleseth\\csvsource\\CsvSource"
+    }
+}
